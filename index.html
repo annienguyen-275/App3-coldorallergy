@@ -137,6 +137,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Are your ears itchy?</p>
+		<a href="#six"   onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+		<a href="#six"   onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	</div>
+</div>
+
+<div class="page" id="six">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Do you have any muscle pain or body aches?</p>
+		<a href="#seven"   onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
+		<a href="#seven"   onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+	</div>
+</div>
+
+<div class="page" id="seven">
+	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
 	
@@ -146,8 +170,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<script>
 			function getResults()
 			{
-			var allergyPercent = 100*(allergy_count/4);
-			var coldPercent = 100*(cold_count/4);
+			var allergyPercent = 100*(allergy_count/6);
+			var coldPercent = 100*(cold_count/6);
 			var resultText = document.getElementById("results");
 			resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%"; 
 			}
