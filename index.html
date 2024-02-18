@@ -36,7 +36,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
+        var allergy_count = 0; 
         var cold_count = 0;
 
         function allergyAdd(){
@@ -72,6 +72,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 }
 </style>
 
+<!-- STARTING PAGE -->
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
@@ -85,8 +86,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+</div>
 
-<!--/ QUESTION 1 -->
+<!-- QUESTION 1 PAGE -->
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
@@ -99,7 +101,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	</div>
 </div>
 
-<!--/ QUESTION 2 -->
+<!-- QUESTION 2 PAGE -->
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -112,7 +114,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>	
 
-<!--/ QUESTION 3 -->
+<!-- QUESTION 3 PAGE -->
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -125,7 +127,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>	
 
-<!--/ QUESTION 4 -->
+<!-- QUESTION 4 PAGE -->
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
@@ -138,17 +140,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>
 
-<!--/RESULTS-->
+<!-- RESULTS PAGE -->
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
+		<h1>Results</h1>n <!-- header title: "Results -->
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p id="results"></p>
-		<a onclick="getResults()" class="w3-btn w3-black">Get results</a>
+		<p id="results"></p> <!-- empty text where results will appear -->
+		<a onclick="getResults()" class="w3-btn w3-black">Get results</a> <!-- button that makes results appear when clicked -->
 		<script>
-			function getResults() <!--/function that makes results with probabilities appear in results paragraph -->
+			function getResults() // function that makes results with probabilities appear in results paragraph
 			{
 			var allergyPercent = 100*(allergy_count/4); // variable that calculates allergy probability
 			var coldPercent = 100*(cold_count/4); // variable that calculates cold probability
